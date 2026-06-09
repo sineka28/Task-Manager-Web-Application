@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input,
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#taskCounter {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background: #eeeeee;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+
+#taskList button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.high {
+    color: red;
+    font-weight: bold;
+}
+
+.medium {
+    color: orange;
+    font-weight: bold;
+}
+
+.low {
+    color: green;
+    font-weight: bold;
+}
+
+/* Dark Mode */
+
+.dark {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark .container {
+    background-color: #333;
+    color: white;
+}
+
+.dark input,
+.dark select {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark button {
+    background-color: #555;
+    color: white;
+}
+
+.dark #taskList li {
+    background-color: #444;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+    <h1>📋 Task Manager</h1>
+    <p>Manage your daily tasks efficiently</p>
+
+    <input type="text" id="taskInput" placeholder="Enter Task">
+
+    <input type="date" id="dueDate">
+
+    <select id="priority">
+        <option value="High">🔴 High</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="Low">🟢 Low</option>
+    </select>
+
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="clearTasks()">Clear All</button>
+
+    <p id="taskCounter">Total Tasks: 0</p>
+
+    <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
