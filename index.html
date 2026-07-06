@@ -1,38 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Task Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Task Manager Agent</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
-    <h1>📋 Task Manager</h1>
-    <p>Manage your daily tasks efficiently</p>
+        <h1>📋 AI Task Manager</h1>
+        <p>Manage your daily tasks efficiently with the power of Google Gemini AI.</p>
 
-    <input type="text" id="taskInput" placeholder="Enter Task">
+        <input type="text" id="taskInput" placeholder="Enter Task">
 
-    <input type="date" id="dueDate">
+        <input type="date" id="dueDate">
 
-    <select id="priority">
-        <option value="High">🔴 High</option>
-        <option value="Medium">🟡 Medium</option>
-        <option value="Low">🟢 Low</option>
-    </select>
+        <select id="priority">
+            <option value="High">🔴 High</option>
+            <option value="Medium">🟡 Medium</option>
+            <option value="Low">🟢 Low</option>
+        </select>
 
-    <button onclick="addTask()">Add Task</button>
-    <button onclick="clearTasks()">Clear All</button>
+        <br><br>
 
-    <p id="taskCounter">Total Tasks: 0</p>
+        <button onclick="addTask()">➕ Add Task</button>
+        <button onclick="clearTasks()">🗑️ Clear All</button>
 
-    <ul id="taskList"></ul>
+        <p id="taskCounter">Total Tasks: 0</p>
 
-</div>
+        <ul id="taskList"></ul>
 
-<script src="script.js"></script>
+        <hr>
+
+        <h2>🤖 AI Task Manager Agent (Powered by Gemini)</h2>
+
+        <p>
+            Describe your work, exams, assignments or daily activities and let
+            Gemini AI generate a smart plan for you.
+        </p>
+
+        <textarea
+            id="aiPrompt"
+            rows="6"
+            placeholder="Example:
+I have an exam tomorrow,
+2 assignments next week,
+need to study Java,
+and complete my project."></textarea>
+
+        <br><br>
+
+        <button onclick="askAI()">🚀 Generate Smart Plan</button>
+
+        <button onclick="document.getElementById('aiPrompt').value='';document.getElementById('aiResponse').innerHTML='';">
+            🧹 Clear AI
+        </button>
+
+        <h3>📌 AI Suggestion</h3>
+
+        <div id="aiResponse">
+            Your AI-generated task plan will appear here...
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
