@@ -106,8 +106,7 @@ async function askAI() {
 
     output.innerHTML = "Thinking... 🤖";
 
-    const apiKey = "AQ.Ab8RN6I_ocdUWWQEfOv4G5h6qiS887o33NRGOi2tLn6O19CiYw";
-
+    const apiKey = "YOUR_API_KEY";
     const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
     try {
